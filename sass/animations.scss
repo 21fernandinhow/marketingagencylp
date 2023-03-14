@@ -1,0 +1,23 @@
+@keyframes animate1 {
+    0%{
+        width: 40%;
+    }
+    50%{
+        width: 60%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        width: 30%;
+    }
+    50%{
+        width: 40%;
+    }
+    100%{
+        width: 30%;
+    }
+}

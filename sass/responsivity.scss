@@ -1,0 +1,66 @@
+@media (min-width:769px){
+    .header{
+        .hidden-xs{
+            display:flex;
+        }
+        .social{
+            img{
+                filter: invert(100%);
+            }
+        }
+    }
+    .container{
+        .animation{
+            min-width: 10%;
+            .area2{
+                transform: translateX(-2.8vw);
+            }
+        }
+        .content{
+            min-width: 90%;
+            #home{
+                justify-content: flex-start;
+                background-size: contain;
+                background-position: right;
+                div{
+                    margin-left: 10vw;
+                    p{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            #about{
+                .about-itens{
+                    max-width: 1000px;
+                    .about-item{
+                        max-width: 30%;
+                        margin: 10px
+                    }
+                }
+                .more-info{
+                    max-width: 1000px;
+                    .apo{
+                        width: 46%;
+                    }
+                    .clients{
+                        width: 46%;
+                    }
+                }
+            }
+            #faq{
+                .question{
+                    max-width: 1000px;
+                }
+            }
+            #cta{
+                div{
+                    max-width: 500px;
+                    padding: 50px;
+                    .subtitle-secondary{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

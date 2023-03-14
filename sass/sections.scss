@@ -1,0 +1,183 @@
+.header{
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0E5264;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+    .logo{
+        max-width: 4rem;
+    }
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+    margin-top: 12vh;
+    .animation{
+        min-width: 25%;
+        min-height: 100vh;
+        display: flex;
+        .area1{
+            background-color: #f3bb3a;
+            height: 100%;
+            border-radius: 0% 100% 100% 0%;
+            animation: animate1 4s linear infinite;
+            z-index: 2;
+        }
+        .area2{
+            background-color: #ffc746;
+            height: 100%;
+            border-radius: 0% 100% 100% 0%;
+            animation: animate2 4s linear infinite;
+            transform: translateX(-7vw);
+            z-index: 1;
+        }
+    }
+    .content{
+        min-width: 75%;
+        #home{
+            @extend .flex-central;
+            min-height: 90vh;
+            background-image: url('../images/bg-lion.png');
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            div{
+                padding: 10px;
+                h1{
+                    font-size: 2.5rem;
+                }
+                p{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+                .btn-secondary{
+                    font-size: 16px;
+                    padding: 12px 24px;
+                }
+            }
+        }
+        #about{
+            min-height: 90vh;
+            @extend .flex-central;
+            flex-direction: column;
+            .about-itens{
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                flex-wrap: wrap;
+                .about-item{
+                    width: 90%;
+                    padding: 25px;
+                    margin: 10px;
+                    background-color: #0E5264;
+                    border-radius: 30px;
+                    color: #fff;
+                }
+            }
+            .more-info{
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                flex-wrap: wrap;
+                padding: 10px;
+                .apo{
+                    margin: 10px;
+                    p{
+                        margin-bottom: 20px;
+                    }
+                }
+                .clients{
+                    margin: 10px;
+                    .logos{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        img{
+                            max-width: 60px;
+                        }
+                    }
+                }
+            }
+        }
+        #faq{
+            @extend .flex-central;
+            flex-direction: column;
+            width: 100%;
+            min-height: 50vh;
+            padding: 15px;
+            margin-bottom: 20px;
+            .question{
+                 background-color: #f5f5f5;
+                 padding: 10px;
+                 padding-bottom: 20px;
+                 margin-top: 15px;
+                 width: 90%;
+                 p{
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                 }
+            }
+        }
+        #cta{
+            @extend .flex-central;
+            min-height: 50vh;
+            margin-bottom: 5vh;
+            div{
+                margin: 10px;
+                background-color: #0E5264;
+                color: #fff;
+                padding: 20px;
+                border-radius: 30px;
+                .subtitle-secondary{
+                    font-size: 1.5rem;
+                    margin-bottom: 5px;
+                }
+                p{
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                }
+                form{
+                    label{
+                        font-size: 14px;
+                    }
+                    input, textarea{
+                        margin-top: 3px;
+                        margin-bottom: 12px;
+                        padding: 10px;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    min-height: 100px;
+    padding: 10px;
+    @extend .flex-central;
+    flex-direction: column;
+    color: #fff;
+    background-color: #0E5264;
+    .social{
+        filter: invert(100%);
+    }
+    p{
+        margin-top: 10px;
+    }
+}
+
+#privacy{
+    padding: 20px;
+    .subtitle{
+        margin-top: 20px;
+    }
+}
