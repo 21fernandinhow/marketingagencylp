@@ -16,10 +16,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.hidden-xs{
-    display:none;
-}
-
 .btn-primary{
     @extend .btn;    
     border: 1px groove #EAD04F;
