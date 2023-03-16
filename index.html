@@ -182,7 +182,7 @@
                         <h2 class="subtitle-secondary">Chegou a hora de aumentar suas vendas</h2>
                         <p>Faça uma avaliação gratuira e entenda como você pode faturar mais pela internet</p>
 
-                        <form action="https://sheetdb.io/api/v1/h737tbhpkliad" method="POST" name="ApoForm">
+                        <form action="https://sheetdb.io/api/v1/h737tbhpkliad" method="POST" name="ApoForm" id="ApoForm" target="contato">
 
                             <label for="name">*Nome:</label>
                             <input type="text" name="data[name]" id="name" required>
@@ -196,10 +196,10 @@
                             <label for="description">Conte um pouco sobre seu negócio:</label>
                             <textarea name="data[description]"  id="description" rows="5"></textarea>
 
-                            <button type="submit" class="btn-primary">Solicitar Avaliação</button>
+                            <a class="btn-primary" href="#cta" onClick="document.getElementById('ApoForm').submit()">Solicitar Avaliação</a>
 
                        </form>
-
+                       <iframe style="display:none;" name="contato" src="privacy.html"></iframe>
                     </div>
                 </section>
                 
