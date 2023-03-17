@@ -16,6 +16,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+iframe{
+    display: none;
+}
+
 .btn-primary{
     @extend .btn;    
     border: 1px groove #EAD04F;
